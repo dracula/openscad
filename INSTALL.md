@@ -33,7 +33,7 @@
     Mac:
 
     ```bash
-    mkdir -p $HOME/Library/Application Support/OpenSCAD/color-schemes/editor $HOME/Library/Application Support/OpenSCAD/color-schemes/render
+    mkdir -p "$HOME/Library/Application Support/OpenSCAD/color-schemes/editor" "$HOME/Library/Application Support/OpenSCAD/color-schemes/render"
     ```
 
     Windows:
@@ -55,8 +55,8 @@
     Mac:
 
     ```bash
-    ln -s $PWD/dracula.json $HOME/Library/Application Support/OpenSCAD/color-schemes/editor
-    ln -s $PWD/transylvania.json $HOME/Library/Application Support/OpenSCAD/color-schemes/render
+    ln -s "$PWD/dracula.json" "$HOME/Library/Application Support/OpenSCAD/color-schemes/editor"
+    ln -s "$PWD/transylvania.json" "$HOME/Library/Application Support/OpenSCAD/color-schemes/render"
     ```
 
     Windows:
