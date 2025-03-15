@@ -2,48 +2,43 @@
 
 #### Install using Git
 
-1.  Clone the [`OpenSCAD` repository](https://github.com/dracula/openscad):
+ 1. Clone the [`OpenSCAD` repository](https://github.com/dracula/openscad):
 
     ```sh
     git clone https://github.com/dracula/openscad.git
     ```
 
-2.  Move into the cloned repository:
+ 2. Move into the cloned repository:
 
     Linux & Mac:
-
     ```bash
     cd ./openscad
     ```
 
     Windows
-
     ```PowerShell
     Set-Location -Path ".\openscad"
     ```
 
-3.  Create the directories `OpenSCAD/color-schemes/editor` and `OpenSCAD/color-schemes/render` in the application's config directory if they do not exist.
+ 3. Create the directories `OpenSCAD/color-schemes/editor` and `OpenSCAD/color-schemes/render`  in the application's config directory if they do not exist.
 
     Linux:
-
     ```bash
     mkdir -p $HOME/.config/OpenSCAD/color-schemes/editor $HOME/.config/OpenSCAD/color-schemes/render
     ```
 
     Mac:
-
     ```bash
-    mkdir -p "$HOME/Library/Application Support/OpenSCAD/color-schemes/editor" "$HOME/Library/Application Support/OpenSCAD/color-schemes/render"
+    mkdir -p $HOME/Library/Application Support/OpenSCAD/color-schemes/editor $HOME/Library/Application Support/OpenSCAD/color-schemes/render
     ```
 
     Windows:
-
     ```PowerShell
-    New-Item -Path "C:\Documents and Settings\$env:username\Local Settings\Application Data\OpenSCAD\color-schemes\editor" -ItemType Directory
-    New-Item -Path "C:\Documents and Settings\$env:username\Local Settings\Application Data\OpenSCAD\color-schemes\render" -ItemType Directory
+    New-Item -Path "C:\Users\$env:username\AppData\Local\OpenSCAD\color-schemes\editor" -ItemType Directory
+    New-Item -Path "C:\Users\$env:username\AppData\Local\OpenSCAD\color-schemes\render" -ItemType Directory
     ```
 
-4.  Finally, create two symbolic links from the local repository to [OpenSCAD](https://openscad.org/)’s editor and render folders:
+ 4. Finally, create two symbolic links from the local repository to [OpenSCAD](https://openscad.org/)’s editor and render folders:
 
     Linux:
 
@@ -53,33 +48,32 @@
     ```
 
     Mac:
-
     ```bash
-    ln -s "$PWD/dracula.json" "$HOME/Library/Application Support/OpenSCAD/color-schemes/editor"
-    ln -s "$PWD/transylvania.json" "$HOME/Library/Application Support/OpenSCAD/color-schemes/render"
+    ln -s $PWD/dracula.json $HOME/Library/Application Support/OpenSCAD/color-schemes/editor
+    ln -s $PWD/transylvania.json $HOME/Library/Application Support/OpenSCAD/color-schemes/render
     ```
 
     Windows:
-
     ```PowerShell
-    New-Item -Path "$pwd\dracula.json" -ItemType SymbolicLink -Value "C:\Documents and Settings\$env:username\Local Settings\Application Data\OpenSCAD\color-schemes\editor"
-    New-Item -Path "$pwd\transylvania.json" -ItemType SymbolicLink -Value "C:\Documents and Settings\$env:username\Local Settings\Application Data\OpenSCAD\color-schemes\render"
+    New-Item -Path "$pwd\dracula.json" -ItemType SymbolicLink -Value "C:\Users\$env:username\AppData\Local\OpenSCAD\color-schemes\editor"
+    New-Item -Path "$pwd\transylvania.json" -ItemType SymbolicLink -Value "C:\Users\$env:username\AppData\Local\OpenSCAD\color-schemes\render"
     ```
 
 #### Install manually
 
-1.  Download the [`OpenSCAD` archive](https://github.com/dracula/openscad/archive/main.zip) and extract it.
+ 1. Download the [`OpenSCAD` archive](https://github.com/dracula/openscad/archive/main.zip) and extract it.
 
-2.  Linux:
+ 2. Linux:
     Create the directories `OpenSCAD/color-schemes/editor` and `OpenSCAD/color-schemes/render` if it does not exist in `$HOME/.config/`.
 
     Mac:
     Create the directories `OpenSCAD/color-schemes/editor` and `OpenSCAD/color-schemes/render` if it does not exist in `$HOME/Library/Application Support/`.
 
     Windows:
-    Create the directories `OpenSCAD/color-schemes/editor` and `OpenSCAD/color-schemes/render` if it does not exist in `C:\Documents and Settings\$env:username\Local Settings\Application Data\`.
+    Create the directories `OpenSCAD/color-schemes/editor` and `OpenSCAD/color-schemes/render` if it does not exist in `C:\Users\$env:username\AppData\Local\`.
 
-3.  Move the `dracula.json` file from the extracted archive to [OpenSCAD](https://github.com/dracula/openscad/archive/main.zip)’s `editor` folder, and `transylvania.json` to [OpenSCAD](https://github.com/dracula/openscad/archive/main.zip)’s `render` folder.
+ 3. Move the `dracula.json` file from the extracted archive to [OpenSCAD](https://github.com/dracula/openscad/archive/main.zip)’s `editor` folder, and `transylvania.json` to [OpenSCAD](https://github.com/dracula/openscad/archive/main.zip)’s `render` folder.
+
 
 #### Activating theme
 
